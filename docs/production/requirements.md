@@ -21,9 +21,14 @@ The installer expects Zulip to be the **only thing** running on the
 system; it will install system packages with `apt` (like Nginx,
 PostgreSQL, and Redis) and configure them for its own use.  We
 strongly recommend using either a fresh machine instance in a cloud
-provider, a fresh VM, or a dedicated machine.  If you decide to
-disregard our advice and use a server that hosts other services, we
-can't support you, but
+provider, a fresh VM, or a dedicated machine. If you do want to run Zulip
+alongside other services then we reccommend using our
+[Docker](https://github.com/zulip/docker-zulip) install method. You will
+most likely need to set this up behind a reverse proxy if installing
+alongside other web apps.
+
+If you decide to disregard our advice and use a server that hosts other services
+with our default installer and not docker, we can't support you, but
 [we do have some notes on issues you'll encounter](install-existing-server.md).
 
 #### Operating system
